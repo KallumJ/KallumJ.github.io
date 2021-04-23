@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
+
+* {
+	font-family:'Roboto'; 
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(#141b3a, #21306b);
+}
+
+html {
+    height: 100%;
+}
+
+.header {
+	font-size: 5rem;
+	text-align: center;
+	color: white;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.nav-link {
+	text-decoration: underline;
+	color: white;
+	font-size: 1.8rem;
+	padding: 20px;
+}
+
+nav {
+	width: 50%;
+	height: 230px;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.nav-link-bar {
+	margin-top: 30px;
+}
+
+.avatar {
+	width: 250px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+}
+
+.nav-container {
+	background-color: #080C1E;
+	padding: 20px;
+	top: 0;
+}
+
+/* Link effect adapted from FreeFrontend https://codepen.io/TiagoLopes/pen/yopxeW */ 
+nav a {
+	color: white;
+	text-decoration: none;
+	position: relative;
+}
+  
+nav a::after{
+	content: "";
+	background: white;
+	mix-blend-mode: exclusion;
+	width: calc(100% + 10px);
+	height: 0;
+	position: absolute;
+	bottom: -4px;
+	left: -5px;
+	transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+  
+nav a:hover::after{
+	  height: calc(100% + 8px)
+}
+
+.card {
+	background-color: white;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.card:hover {
+	transition: box-shadow 0.2s ease-in-out;
+	box-shadow: rgba(0, 0, 0, 0.6) 2px 5px 10px 2px;
+}
+
+.card-header {
+	text-align: center;
+	font-weight: bolder;
+}
+
+.card-text {
+	font-size: 1.5rem;
+	padding: 20px;
+}
+
+.projects-card {
+	width: 90%;
+}
+
+.project {
+	border-style: dashed;
+	border-width: 1px;;
+	padding: 20px;
+	width: 300px;
+}
+
+.project-img {
+	width: 300px;
+	height: 300px;
+}
+
+.projects-flex {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.projects-flex > div {
+	margin: 40px;
+}
+
+.project-title {
+	text-align: center;
+	font-weight: bolder;
+	text-decoration: underline;
+	color: black;
+}
+
+.project-description {
+	text-align: center;
+}
+
+.project:hover {
+	transition: box-shadow 0.3s;
+	box-shadow: 5px 5px 11px 5px rgba(33,33,33,.2); 
+}
+
+.card a {
+	color: blue;
+}
+
+.project hr {
+	border-color: rgb(94, 94, 94);
+}
+
+footer {
+	margin-top: 50px;
+	background-color: #080C1E;
+	height: 125px;
+	text-align: center;
+}
+
+footer img {
+	margin: 20px;
+	width: 30px;
+}
+
+footer p {
+	color: #5c6380;
+}
