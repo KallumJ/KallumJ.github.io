@@ -105,13 +105,16 @@ nav a:hover::after{
 
 .projects-card {
 	width: 90%;
+
 }
 
 .project {
 	border-style: dashed;
-	border-width: 1px;;
+	border-width: 2px;
+	border-color: #141b3a;
 	padding: 20px;
 	width: 300px;
+	background-color: rgb(226, 239, 255);
 }
 
 .project-img {
@@ -167,4 +170,8 @@ footer img {
 
 footer p {
 	color: #5c6380;
+}
+
+.about-me-text {
+	text-align: center;
 }
